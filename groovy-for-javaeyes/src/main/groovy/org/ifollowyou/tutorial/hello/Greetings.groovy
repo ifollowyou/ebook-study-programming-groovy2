@@ -1,4 +1,4 @@
-package org.ifollowyou.tutorial
+package org.ifollowyou.tutorial.hello;
 
 
 public class Greetings {
