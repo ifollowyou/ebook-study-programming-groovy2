@@ -5,21 +5,16 @@ apply plugin: 'groovy'
 apply plugin: 'java'
 
 version = '1.0'
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     maven {
-        url 'https://repo.spring.io/libs-release'
-    }
-
-    maven {
-        url 'http://localhost:8081/nexus/content/groups/public/'
+        url 'http://127.0.0.1:8081/nexus/content/groups/public/'
     }
 
     mavenLocal()
     jcenter()
-    mavenCentral()
 }
 
 dependencies {
