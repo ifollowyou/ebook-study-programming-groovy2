@@ -1,15 +1,11 @@
-package org.ifollowyou.tutorial
-/***
- * Excerpted from "Programming Groovy, 2nd Edition",
- * published by The Pragmatic Bookshelf.
- * Copyrights apply to this code. It may not be used to create training material, 
- * courses, books, articles, and the like. Contact us if you are in doubt.
- * We make no guarantees that this code is fit for any purpose. 
- * Visit http://www.pragmaticprogrammer.com/titles/vslg2 for more book information.
-***/
+package org.ifollowyou.tutorial;
+
 def foo(str) {
-  //if (str != null) { str.reverse() }
-  str?.reverse()
+
+    // 问号操作相当于非空判断
+    // 方法可以没有显式返回，两者等效
+    str?.reverse()
+    return str?.reverse()
 }
 
 println foo('evil')
